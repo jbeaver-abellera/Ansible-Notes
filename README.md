@@ -1,8 +1,8 @@
 # Ansible-Notes 
 ## Core Concepts
-`IaC`: Execution and management of configuration in ansible uses code and automation. On top of the ability to automate these management tasks, IaC also enables employing various code development best practices and designs such as reusability, shareability, modularization of ansible logics, and organization pattern of various configuration files in the directory.
-`Push-Based`: Compared to other configuration tools like Puppet or Chef, Ansible uses the push-based model, wherein the master host will push the configurations to the target/slave hosts. This is a better model compared to pull-based model wherein an admin needs to login to each slave host and pull configurations to the master host. 
-`Agentless `: Ansible does not require installation of software in its managed hosts, since it only connects to host using SSH. This also makes Ansible very lightweight, as it does not need to be installed on managed hosts.
+`IaC`: Execution and management of configuration in ansible uses code and automation. On top of the ability to automate these management tasks, IaC also enables employing various code development best practices and designs such as reusability, shareability, modularization of ansible logics, and organization pattern of various configuration files in the directory.\
+`Push-Based`: Compared to other configuration tools like Puppet or Chef, Ansible uses the push-based model, wherein the master host will push the configurations to the target/slave hosts. This is a better model compared to pull-based model wherein an admin needs to login to each slave host and pull configurations to the master host. \
+`Agentless `: Ansible does not require installation of software in its managed hosts, since it only connects to host using SSH. This also makes Ansible very lightweight, as it does not need to be installed on managed hosts.\
 `Idempotent`: In the context of Ansible, idempotent refers to its property of maintaining the state of the host. This means that when a package manger like apt-get is updated, any succeeding update of apt-get will not get executed as Ansible has already recognized that the apt-get is updated. This can be beneficial in cases where multiple execution of the same task can cause issue to the host, and reducing execution time if some states are already fulfilled.
 
 
